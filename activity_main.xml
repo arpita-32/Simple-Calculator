@@ -7,14 +7,14 @@
     android:padding="20dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Simple Calculator"
         android:textStyle="bold"
         android:layout_marginTop="50dp"
-        android:textSize="30sp"
-        />
+        android:textSize="30sp"/>
 
     <EditText
         android:id="@+id/number1"
@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:hint="Enter number"
+        android:inputType="number"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -30,12 +31,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="Enter number"
-        tools:ignore="TouchTargetSizeCheck" />
+        android:inputType="number"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="133dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <Button
             android:id="@+id/btn_add"
@@ -43,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:text="+"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
 
         <Button
             android:id="@+id/btn_sub"
@@ -51,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:text="-"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
 
         <Button
             android:id="@+id/btn_mul"
@@ -59,30 +62,21 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:text="*"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
 
         <Button
             android:id="@+id/btn_div"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
             android:text="/"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Result"
-        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/answer"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:text="Result"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
