@@ -2,7 +2,7 @@
 
 This is a basic Android application that performs simple arithmetic operations like addition, subtraction, multiplication, and division. The app is built using LinearLayout and includes two input fields where users can enter numbers, buttons for operations, and a text view to display the result.
 
-Features
+#Features
 Simple and easy-to-use interface.
 Supports basic arithmetic operations: Addition (+), Subtraction (-), Multiplication (*), and Division (/).
 Edge-to-edge display for a modern look.
