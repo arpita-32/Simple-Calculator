@@ -16,15 +16,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Set edge-to-edge display for the root view
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.answer)) { view, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            view.updatePadding(
-                top = systemBars.top,
-                bottom = systemBars.bottom,
-                left = systemBars.left,
-                right = systemBars.right
-            )
-            insets
+        val answerView = findViewById<View>(R.id.answer)
+        answerView?.let { view ->
+            ViewCompat.setOnApplyWindowInsetsListener(view) { v, insets ->
+                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+                v.updatePadding(
+                    top = systemBars.top,
+                    bottom = systemBars.bottom,
+                    left = systemBars.left,
+                    right = systemBars.right
+                )
+                insets
+            }
         }
     }
 }
