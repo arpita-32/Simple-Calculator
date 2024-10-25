@@ -6,12 +6,12 @@ This is a basic Android application that performs simple arithmetic operations l
 Simple and easy-to-use interface.
 Supports basic arithmetic operations: Addition (+), Subtraction (-), Multiplication (*), and Division (/).
 Edge-to-edge display for a modern look.
-Technologies Used
+#Technologies Used
 Android Studio: For developing the app.
 Kotlin: For writing the logic in MainActivity.kt.
 XML: For designing the user interface.
 Edge-to-edge layout: Using WindowInsetsCompat and ViewCompat.
-UI Overview
+#UI Overview
 TextView: Displays the title "Simple Calculator."
 EditText: Two input fields for users to enter numbers.
 Buttons: Four buttons for different arithmetic operations.
